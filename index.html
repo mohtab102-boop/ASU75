@@ -18,18 +18,12 @@
 <div id="bar">
   <b>كتاب دفعة 75</b>
   <button id="bEdit" class="on">وضع التعديل: شغّال</button>
-  <button id="bSave">حفظ ملف المشروع</button>
-  <button id="bOpen">فتح ملف مشروع</button>
-  <button id="bReset">نسخة الدفعة الأصلية</button>
   <button id="bPrint" class="pr">طباعة / PDF</button>
   <span id="status"></span>
   <input type="file" id="fImg" accept="image/*" hidden>
-  <input type="file" id="fProj" accept=".json,application/json" hidden>
 </div>
 
-<div id="hint">
-  اضغط على أي إطار صور علشان ترفع صورة، واضغط على أي نص علشان تعدله. التعديلات بتتحفظ تلقائياً في متصفحك. لما تخلص اضغط «حفظ ملف المشروع» وابعت الملف لمنسق الكتاب. من أزرار فوق كل صفحة تقدر تنسخها أو تحذفها أو تحركها.
-</div>
+<div id="hint">اضغط على أي إطار صور علشان ترفع صورة، واضغط على أي نص علشان تعدله. أي تعديل بيظهر لكل الدفعة على طول. اكتب بحب، وماتمسحش كلام حد غيرك.</div>
 
 <main id="book">
 
@@ -50,14 +44,14 @@
     <circle cx="95" cy="68" r="11" fill="#FFF6E4" stroke="#1F2A44" stroke-width="6"/>
   </svg>
   <div class="abs" style="inset:0;display:flex;flex-direction:column;align-items:center;padding:70px 64px 0">
-    <div class="t" style="font-size:20px;font-weight:800;background:#1F2A44;color:#FFF6E4;padding:8px 26px;border-radius:40px">كلية الطب · جامعة عين شمس</div>
-    <div class="t aref pop" style="margin-top:120px;font-size:66px;line-height:1">دفعة</div>
-    <div class="t lal pop" style="font-size:330px;line-height:.9;color:#D9452F;text-shadow:10px 10px 0 #FFC857;animation-delay:.25s">75</div>
-    <div class="t lal pop" style="margin-top:14px;font-size:68px;animation-delay:.5s">كتاب الذكريات</div>
-    <div class="t pop" style="margin-top:6px;font-size:24px;font-weight:600;animation-delay:.7s">ضحكنا .. تعبنا .. وكبرنا سوا</div>
+    <div data-k="p1-t1" class="t" style="font-size:20px;font-weight:800;background:#1F2A44;color:#FFF6E4;padding:8px 26px;border-radius:40px">كلية الطب · جامعة عين شمس</div>
+    <div data-k="p1-t2" class="t aref pop" style="margin-top:120px;font-size:66px;line-height:1">دفعة</div>
+    <div data-k="p1-t3" class="t lal pop" style="font-size:330px;line-height:.9;color:#D9452F;text-shadow:10px 10px 0 #FFC857;animation-delay:.25s">75</div>
+    <div data-k="p1-t4" class="t lal pop" style="margin-top:14px;font-size:68px;animation-delay:.5s">كتاب الذكريات</div>
+    <div data-k="p1-t5" class="t pop" style="margin-top:6px;font-size:24px;font-weight:600;animation-delay:.7s">ضحكنا .. تعبنا .. وكبرنا سوا</div>
     <div style="margin-top:auto;margin-bottom:70px;display:flex;flex-direction:column;align-items:center;gap:10px">
-      <div class="t" style="font-size:22px;font-weight:800;color:#fff;background:#D9452F;padding:8px 30px;border-radius:40px;border:3px solid #FFF6E4">سنة التخرج</div>
-      <div class="t" style="font-size:18px;font-weight:600;color:#FFF6E4">رحلة من الأيام الحلوة، بأقلامنا وصورنا</div>
+      <div data-k="p1-t6" class="t" style="font-size:22px;font-weight:800;color:#fff;background:#D9452F;padding:8px 30px;border-radius:40px;border:3px solid #FFF6E4">سنة التخرج</div>
+      <div data-k="p1-t7" class="t" style="font-size:18px;font-weight:600;color:#FFF6E4">رحلة من الأيام الحلوة، بأقلامنا وصورنا</div>
     </div>
   </div>
 </div></div></section>
@@ -69,29 +63,29 @@
   <div class="blob fl" style="top:40px;left:60px;width:90px;height:90px;background:#D9452F;opacity:.9"></div>
   <svg class="spark tw" style="top:50px;left:220px;width:34px;height:34px;color:#FFF6E4"><use href="#sp"/></svg>
   <div class="abs" style="top:56px;right:64px">
-    <div class="t" style="font-size:18px;font-weight:800;letter-spacing:1px">البداية</div>
-    <div class="t lal pop" style="font-size:84px;line-height:1.05">كلمة الدفعة</div>
+    <div data-k="p2-t1" class="t" style="font-size:18px;font-weight:800;letter-spacing:1px">البداية</div>
+    <div data-k="p2-t2" class="t lal pop" style="font-size:84px;line-height:1.05">كلمة الدفعة</div>
   </div>
   <div class="abs" style="top:340px;right:64px;width:360px;display:flex;flex-direction:column;gap:18px">
-    <div class="t aref" style="font-size:34px;color:#D9452F;line-height:1.3">يا شباب .. فاكرين أول يوم؟</div>
-    <p class="t" style="margin:0;font-size:18px;line-height:1.85">اكتب هنا كلمة الدفعة. حكاية البداية، أول يوم دخلنا فيه الكلية، والناس اللي بقوا أصحاب العمر.</p>
-    <p class="t" style="margin:0;font-size:18px;line-height:1.85">فقرة ثانية: أحلى المواقف، السهر قبل الامتحانات، وضحكات المدرجات اللي ما بتتنساش.</p>
-    <p class="t" style="margin:0;font-size:18px;line-height:1.85">الختام: الكتاب ده هدية لكل واحد فينا، علشان نفتكر إننا كنا يوم مع بعض.</p>
-    <div class="t aref" style="margin-top:10px;font-size:28px;color:#17756B">توقيع لجنة الكتاب</div>
+    <div data-k="p2-t3" class="t aref" style="font-size:34px;color:#D9452F;line-height:1.3">يا شباب .. فاكرين أول يوم؟</div>
+    <p data-k="p2-t4" class="t" style="margin:0;font-size:18px;line-height:1.85">اكتب هنا كلمة الدفعة. حكاية البداية، أول يوم دخلنا فيه الكلية، والناس اللي بقوا أصحاب العمر.</p>
+    <p data-k="p2-t5" class="t" style="margin:0;font-size:18px;line-height:1.85">فقرة ثانية: أحلى المواقف، السهر قبل الامتحانات، وضحكات المدرجات اللي ما بتتنساش.</p>
+    <p data-k="p2-t6" class="t" style="margin:0;font-size:18px;line-height:1.85">الختام: الكتاب ده هدية لكل واحد فينا، علشان نفتكر إننا كنا يوم مع بعض.</p>
+    <div data-k="p2-t7" class="t aref" style="margin-top:10px;font-size:28px;color:#17756B">توقيع لجنة الكتاب</div>
   </div>
   <div class="pol fl" style="--r:4deg;top:330px;left:56px;width:270px">
     <i class="tape" style="left:90px;background:#7ED6C9;transform:rotate(-4deg)"></i>
-    <div class="slot c-t" style="height:300px">صورة الدفعة كلها</div>
-    <div class="cap t">عنوان الصورة</div>
+    <div data-k="p2-s1" class="slot c-t" style="height:300px">صورة الدفعة كلها</div>
+    <div data-k="p2-t8" class="cap t">عنوان الصورة</div>
   </div>
   <div class="abs" style="bottom:170px;left:56px;display:flex;gap:14px">
-    <div class="slot c-r" style="width:120px;height:120px;border-radius:16px;font-size:14px">صورة صغيرة</div>
-    <div class="slot c-r" style="width:120px;height:120px;border-radius:16px;font-size:14px">صورة صغيرة</div>
+    <div data-k="p2-s2" class="slot c-r" style="width:120px;height:120px;border-radius:16px;font-size:14px">صورة صغيرة</div>
+    <div data-k="p2-s3" class="slot c-r" style="width:120px;height:120px;border-radius:16px;font-size:14px">صورة صغيرة</div>
   </div>
   <div class="abs" style="bottom:0;left:0;width:794px;height:90px;background:#17756B"></div>
   <div class="abs" style="bottom:28px;right:64px;left:64px;display:flex;justify-content:space-between;align-items:center;color:#FFF6E4;font-weight:800;font-size:16px">
-    <span class="t">دفعة 75 · طب عين شمس</span>
-    <span class="t" style="background:#FFC857;color:#1F2A44;border-radius:50%;width:38px;height:38px;display:flex;align-items:center;justify-content:center">٢</span>
+    <span data-k="p2-t9" class="t">دفعة 75 · طب عين شمس</span>
+    <span data-k="p2-t10" class="t" style="background:#FFC857;color:#1F2A44;border-radius:50%;width:38px;height:38px;display:flex;align-items:center;justify-content:center">٢</span>
   </div>
 </div></div></section>
 
@@ -102,19 +96,19 @@
   <div class="blob fl" style="bottom:90px;left:60px;width:70px;height:70px;background:#D9452F"></div>
   <svg class="spark tw" style="top:90px;left:220px;width:30px;height:30px;color:#D9452F"><use href="#sp"/></svg>
   <div class="abs" style="top:72px;right:72px">
-    <div class="t aref" style="font-size:30px;color:#17756B">رحلتنا</div>
-    <div class="t lal" style="font-size:88px;line-height:1">الفهرس</div>
+    <div data-k="p3-t1" class="t aref" style="font-size:30px;color:#17756B">رحلتنا</div>
+    <div data-k="p3-t2" class="t lal" style="font-size:88px;line-height:1">الفهرس</div>
     <div style="margin-top:14px;width:120px;height:10px;border-radius:6px;background:#D9452F"></div>
   </div>
   <div class="abs" style="top:320px;right:72px;left:72px;display:flex;flex-direction:column;gap:26px">
-    <div class="toc sl" style="animation-delay:.1s"><div class="n t" style="background:#D9452F;color:#fff">١</div><div class="x"><b class="t">كلمة الدفعة</b><span class="t">بداية الحكاية</span></div><div class="dots"></div><div class="pg t" style="color:#D9452F">٢</div></div>
-    <div class="toc sl" style="animation-delay:.25s"><div class="n t" style="background:#17756B;color:#fff">٢</div><div class="x"><b class="t">أيام الدوام</b><span class="t">المدرجات، المستشفى، والكانتين</span></div><div class="dots"></div><div class="pg t" style="color:#17756B">٤</div></div>
-    <div class="toc sl" style="animation-delay:.4s"><div class="n t" style="background:#FFC857">٣</div><div class="x"><b class="t">وإحنا صغار</b><span class="t">أحلى صور الطفولة</span></div><div class="dots"></div><div class="pg t" style="color:#B07C00">٥</div></div>
-    <div class="toc sl" style="animation-delay:.55s"><div class="n t" style="background:#7ED6C9">٤</div><div class="x"><b class="t">رسائل الدفعة</b><span class="t">كلمات من القلب لبعض</span></div><div class="dots"></div><div class="pg t" style="color:#17756B">٦</div></div>
-    <div class="toc sl" style="animation-delay:.7s"><div class="n t" style="background:#1F2A44;color:#FFF6E4">٥</div><div class="x"><b class="t">فصل جديد</b><span class="t">وصف قصير</span></div><div class="dots"></div><div class="pg t">٨</div></div>
+    <div class="toc sl" style="animation-delay:.1s"><div data-k="p3-t3" class="n t" style="background:#D9452F;color:#fff">١</div><div class="x"><b data-k="p3-t4" class="t">كلمة الدفعة</b><span data-k="p3-t5" class="t">بداية الحكاية</span></div><div class="dots"></div><div data-k="p3-t6" class="pg t" style="color:#D9452F">٢</div></div>
+    <div class="toc sl" style="animation-delay:.25s"><div data-k="p3-t7" class="n t" style="background:#17756B;color:#fff">٢</div><div class="x"><b data-k="p3-t8" class="t">أيام الدوام</b><span data-k="p3-t9" class="t">المدرجات، المستشفى، والكانتين</span></div><div class="dots"></div><div data-k="p3-t10" class="pg t" style="color:#17756B">٤</div></div>
+    <div class="toc sl" style="animation-delay:.4s"><div data-k="p3-t11" class="n t" style="background:#FFC857">٣</div><div class="x"><b data-k="p3-t12" class="t">وإحنا صغار</b><span data-k="p3-t13" class="t">أحلى صور الطفولة</span></div><div class="dots"></div><div data-k="p3-t14" class="pg t" style="color:#B07C00">٥</div></div>
+    <div class="toc sl" style="animation-delay:.55s"><div data-k="p3-t15" class="n t" style="background:#7ED6C9">٤</div><div class="x"><b data-k="p3-t16" class="t">رسائل الدفعة</b><span data-k="p3-t17" class="t">كلمات من القلب لبعض</span></div><div class="dots"></div><div data-k="p3-t18" class="pg t" style="color:#17756B">٦</div></div>
+    <div class="toc sl" style="animation-delay:.7s"><div data-k="p3-t19" class="n t" style="background:#1F2A44;color:#FFF6E4">٥</div><div class="x"><b data-k="p3-t20" class="t">فصل جديد</b><span data-k="p3-t21" class="t">وصف قصير</span></div><div class="dots"></div><div data-k="p3-t22" class="pg t">٨</div></div>
   </div>
-  <div class="foot t">دفعة 75 · طب عين شمس</div>
-  <div class="num t" style="background:#1F2A44">٣</div>
+  <div data-k="p3-t23" class="foot t">دفعة 75 · طب عين شمس</div>
+  <div data-k="p3-t24" class="num t" style="background:#1F2A44">٣</div>
 </div></div></section>
 
 <!-- ============ 4. أيام الدوام ============ -->
@@ -122,32 +116,32 @@
   <div class="blob" style="top:-120px;left:-100px;width:340px;height:340px;background:#FFC857"></div>
   <div class="blob" style="bottom:-110px;right:-90px;width:360px;height:360px;background:#7ED6C9"></div>
   <svg class="spark tw" style="top:235px;left:330px;width:32px;height:32px;color:#D9452F"><use href="#sp"/></svg>
-  <div class="badge"><i class="t" style="background:#D9452F">٢</i><div><small class="t" style="color:#17756B">الفصل الثاني</small><h2 class="t">أيام الدوام</h2></div></div>
+  <div class="badge"><i data-k="p4-t1" class="t" style="background:#D9452F">٢</i><div><small data-k="p4-t2" class="t" style="color:#17756B">الفصل الثاني</small><h2 data-k="p4-t3" class="t">أيام الدوام</h2></div></div>
   <div class="pol fl" style="--r:3deg;top:215px;right:64px;width:390px">
     <i class="tape" style="right:150px;width:96px;background:#FFC857;transform:rotate(3deg)"></i>
-    <div class="slot c-r" style="height:290px">صورة كبيرة: المدرج أو يوم لا ينسى</div>
-    <div class="cap t" style="font-size:24px">اكتب هنا تعليق الصورة</div>
+    <div data-k="p4-s1" class="slot c-r" style="height:290px">صورة كبيرة: المدرج أو يوم لا ينسى</div>
+    <div data-k="p4-t4" class="cap t" style="font-size:24px">اكتب هنا تعليق الصورة</div>
   </div>
   <div class="pol fl" style="--r:-4deg;top:300px;left:52px;width:250px;animation-delay:-2s">
     <i class="tape" style="left:80px;background:#7ED6C9;transform:rotate(-4deg)"></i>
-    <div class="slot c-t" style="height:210px">صورة من المستشفى</div>
-    <div class="cap t" style="font-size:20px">تعليق</div>
+    <div data-k="p4-s2" class="slot c-t" style="height:210px">صورة من المستشفى</div>
+    <div data-k="p4-t5" class="cap t" style="font-size:20px">تعليق</div>
   </div>
   <div class="pol fl" style="--r:-3deg;top:640px;right:64px;width:210px;animation-delay:-1s">
-    <div class="slot c-y" style="height:170px;font-size:16px">صورة الكانتين</div><div class="cap t" style="font-size:19px">تعليق</div>
+    <div data-k="p4-s3" class="slot c-y" style="height:170px;font-size:16px">صورة الكانتين</div><div data-k="p4-t6" class="cap t" style="font-size:19px">تعليق</div>
   </div>
   <div class="pol fl" style="--r:2deg;top:665px;right:292px;width:210px;animation-delay:-3s">
-    <div class="slot c-r" style="height:170px;font-size:16px">صورة الأصحاب</div><div class="cap t" style="font-size:19px">تعليق</div>
+    <div data-k="p4-s4" class="slot c-r" style="height:170px;font-size:16px">صورة الأصحاب</div><div data-k="p4-t7" class="cap t" style="font-size:19px">تعليق</div>
   </div>
   <div class="pol fl" style="--r:-2deg;top:640px;left:52px;width:210px;animation-delay:-4s">
-    <div class="slot c-t" style="height:170px;font-size:16px">صورة قبل الامتحان</div><div class="cap t" style="font-size:19px">تعليق</div>
+    <div data-k="p4-s5" class="slot c-t" style="height:170px;font-size:16px">صورة قبل الامتحان</div><div data-k="p4-t8" class="cap t" style="font-size:19px">تعليق</div>
   </div>
   <div class="abs pop" style="bottom:120px;right:64px;left:64px;background:#1F2A44;color:#FFF6E4;border-radius:28px;padding:24px 34px;display:flex;align-items:center;gap:20px">
     <div class="lal" style="font-size:80px;line-height:.8;color:#FFC857">”</div>
-    <div class="t" style="font-size:22px;font-weight:600;line-height:1.6">اكتب هنا أشهر جملة اتقالت في الدوام، أو أطرف موقف حصل في المدرج.</div>
+    <div data-k="p4-t9" class="t" style="font-size:22px;font-weight:600;line-height:1.6">اكتب هنا أشهر جملة اتقالت في الدوام، أو أطرف موقف حصل في المدرج.</div>
   </div>
-  <div class="foot t">دفعة 75 · طب عين شمس</div>
-  <div class="num t" style="background:#17756B">٤</div>
+  <div data-k="p4-t10" class="foot t">دفعة 75 · طب عين شمس</div>
+  <div data-k="p4-t11" class="num t" style="background:#17756B">٤</div>
 </div></div></section>
 
 <!-- ============ 5. وإحنا صغار ============ -->
@@ -155,23 +149,23 @@
   <div class="blob" style="top:-110px;right:-100px;width:340px;height:340px;background:#FFC857"></div>
   <div class="blob" style="bottom:-130px;left:-110px;width:360px;height:360px;background:#FFB3A5"></div>
   <svg class="spark tw" style="top:100px;left:120px;width:34px;height:34px;color:#D9452F"><use href="#sp"/></svg>
-  <div class="badge"><i class="t" style="background:#17756B">٣</i><div><small class="t" style="color:#D9452F">الفصل الثالث</small><h2 class="t">وإحنا صغار</h2></div></div>
+  <div class="badge"><i data-k="p5-t1" class="t" style="background:#17756B">٣</i><div><small data-k="p5-t2" class="t" style="color:#D9452F">الفصل الثالث</small><h2 data-k="p5-t3" class="t">وإحنا صغار</h2></div></div>
   <div class="abs" style="top:230px;right:64px;left:64px;display:flex;flex-direction:column;gap:34px">
     <div class="pair sl" style="animation-delay:.1s">
-      <div class="slot c-r">صورة وهو صغير</div>
-      <div class="mid"><div class="nm t">اسم الزميل</div><div class="sub t">حلمه وهو صغير</div><div class="sub t" style="font-size:15px">اكتب هنا ذكرى أو جملة عن الصورة</div></div>
+      <div data-k="p5-s1" class="slot c-r">صورة وهو صغير</div>
+      <div class="mid"><div data-k="p5-t4" class="nm t">اسم الزميل</div><div data-k="p5-t5" class="sub t">حلمه وهو صغير</div><div data-k="p5-t6" class="sub t" style="font-size:15px">اكتب هنا ذكرى أو جملة عن الصورة</div></div>
     </div>
     <div class="pair sl" style="animation-delay:.3s">
-      <div class="slot c-y">صورة وهو صغير</div>
-      <div class="mid"><div class="nm t">اسم الزميل</div><div class="sub t">حلمه وهو صغير</div><div class="sub t" style="font-size:15px">اكتب هنا ذكرى أو جملة عن الصورة</div></div>
+      <div data-k="p5-s2" class="slot c-y">صورة وهو صغير</div>
+      <div class="mid"><div data-k="p5-t7" class="nm t">اسم الزميل</div><div data-k="p5-t8" class="sub t">حلمه وهو صغير</div><div data-k="p5-t9" class="sub t" style="font-size:15px">اكتب هنا ذكرى أو جملة عن الصورة</div></div>
     </div>
     <div class="pair sl" style="animation-delay:.5s">
-      <div class="slot c-t">صورة وهو صغير</div>
-      <div class="mid"><div class="nm t">اسم الزميل</div><div class="sub t">حلمه وهو صغير</div><div class="sub t" style="font-size:15px">اكتب هنا ذكرى أو جملة عن الصورة</div></div>
+      <div data-k="p5-s3" class="slot c-t">صورة وهو صغير</div>
+      <div class="mid"><div data-k="p5-t10" class="nm t">اسم الزميل</div><div data-k="p5-t11" class="sub t">حلمه وهو صغير</div><div data-k="p5-t12" class="sub t" style="font-size:15px">اكتب هنا ذكرى أو جملة عن الصورة</div></div>
     </div>
   </div>
-  <div class="foot t">دفعة 75 · طب عين شمس</div>
-  <div class="num t" style="background:#D9452F">٥</div>
+  <div data-k="p5-t13" class="foot t">دفعة 75 · طب عين شمس</div>
+  <div data-k="p5-t14" class="num t" style="background:#D9452F">٥</div>
 </div></div></section>
 
 <!-- ============ 6. رسائل ١ ============ -->
@@ -179,15 +173,15 @@
   <div class="blob" style="top:-120px;left:-100px;width:330px;height:330px;background:#7ED6C9"></div>
   <div class="blob" style="bottom:-140px;right:-110px;width:360px;height:360px;background:#FFC857"></div>
   <svg class="spark bt" style="top:84px;left:100px;width:52px;height:48px;color:#D9452F"><use href="#ht"/></svg>
-  <div class="badge"><i class="t" style="background:#FFC857;color:#1F2A44">٤</i><div><small class="t" style="color:#17756B">الفصل الرابع</small><h2 class="t">رسائل الدفعة</h2></div></div>
+  <div class="badge"><i data-k="p6-t1" class="t" style="background:#FFC857;color:#1F2A44">٤</i><div><small data-k="p6-t2" class="t" style="color:#17756B">الفصل الرابع</small><h2 data-k="p6-t3" class="t">رسائل الدفعة</h2></div></div>
   <div class="grid2">
-    <div class="card pop fl" style="--r:-1.5deg;border-top-color:#D9452F"><div class="who"><div class="slot av c-r">صورته</div><div><div class="nm t">اسم الزميل</div><div class="sub t">لقبه أو مجموعته</div></div></div><p class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
-    <div class="card pop fl" style="--r:1.5deg;border-top-color:#17756B;animation-delay:.2s"><div class="who"><div class="slot av c-t">صورته</div><div><div class="nm t">اسم الزميل</div><div class="sub t">لقبه أو مجموعته</div></div></div><p class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
-    <div class="card pop fl" style="--r:1.2deg;border-top-color:#B07C00;animation-delay:.35s"><div class="who"><div class="slot av c-y">صورته</div><div><div class="nm t">اسم الزميل</div><div class="sub t">لقبه أو مجموعته</div></div></div><p class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
-    <div class="card pop fl" style="--r:-1.2deg;border-top-color:#1F2A44;animation-delay:.5s"><div class="who"><div class="slot av c-n">صورته</div><div><div class="nm t">اسم الزميل</div><div class="sub t">لقبه أو مجموعته</div></div></div><p class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
+    <div class="card pop fl" style="--r:-1.5deg;border-top-color:#D9452F"><div class="who"><div data-k="p6-s1" class="slot av c-r">صورته</div><div><div data-k="p6-t4" class="nm t">اسم الزميل</div><div data-k="p6-t5" class="sub t">لقبه أو مجموعته</div></div></div><p data-k="p6-t6" class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
+    <div class="card pop fl" style="--r:1.5deg;border-top-color:#17756B;animation-delay:.2s"><div class="who"><div data-k="p6-s2" class="slot av c-t">صورته</div><div><div data-k="p6-t7" class="nm t">اسم الزميل</div><div data-k="p6-t8" class="sub t">لقبه أو مجموعته</div></div></div><p data-k="p6-t9" class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
+    <div class="card pop fl" style="--r:1.2deg;border-top-color:#B07C00;animation-delay:.35s"><div class="who"><div data-k="p6-s3" class="slot av c-y">صورته</div><div><div data-k="p6-t10" class="nm t">اسم الزميل</div><div data-k="p6-t11" class="sub t">لقبه أو مجموعته</div></div></div><p data-k="p6-t12" class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
+    <div class="card pop fl" style="--r:-1.2deg;border-top-color:#1F2A44;animation-delay:.5s"><div class="who"><div data-k="p6-s4" class="slot av c-n">صورته</div><div><div data-k="p6-t13" class="nm t">اسم الزميل</div><div data-k="p6-t14" class="sub t">لقبه أو مجموعته</div></div></div><p data-k="p6-t15" class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
   </div>
-  <div class="foot t">دفعة 75 · طب عين شمس</div>
-  <div class="num t" style="background:#D9452F">٦</div>
+  <div data-k="p6-t16" class="foot t">دفعة 75 · طب عين شمس</div>
+  <div data-k="p6-t17" class="num t" style="background:#D9452F">٦</div>
 </div></div></section>
 
 <!-- ============ 7. رسائل ٢ ============ -->
@@ -195,17 +189,17 @@
   <div class="blob" style="top:-120px;left:-100px;width:330px;height:330px;background:#FFB3A5"></div>
   <div class="blob" style="bottom:-140px;left:-110px;width:360px;height:360px;background:#7ED6C9"></div>
   <svg class="spark bt" style="top:84px;left:100px;width:52px;height:48px;color:#D9452F"><use href="#ht"/></svg>
-  <div class="badge"><i class="t" style="background:#D9452F">٤</i><div><small class="t" style="color:#17756B">تابع</small><h2 class="t">رسائل الدفعة</h2></div></div>
+  <div class="badge"><i data-k="p7-t1" class="t" style="background:#D9452F">٤</i><div><small data-k="p7-t2" class="t" style="color:#17756B">تابع</small><h2 data-k="p7-t3" class="t">رسائل الدفعة</h2></div></div>
   <div class="grid2">
     <div class="card pop fl" style="--r:-.8deg;grid-column:span 2;height:300px;border-top-color:#17756B;display:flex;gap:22px">
-      <div class="slot c-t" style="flex:none;width:190px;height:210px;border-radius:18px;font-size:16px">صورته</div>
-      <div style="flex:1;min-width:0"><div class="nm t" style="font-size:32px">اسم الزميل</div><div class="sub t">لقبه أو مجموعته</div><p class="t" style="font-size:18px;margin-top:14px">رسالة أطول من زميل: اكتب هنا كلمات من القلب، ذكرى حلوة، أو وصية لأصحابه.</p></div>
+      <div data-k="p7-s1" class="slot c-t" style="flex:none;width:190px;height:210px;border-radius:18px;font-size:16px">صورته</div>
+      <div style="flex:1;min-width:0"><div data-k="p7-t4" class="nm t" style="font-size:32px">اسم الزميل</div><div data-k="p7-t5" class="sub t">لقبه أو مجموعته</div><p data-k="p7-t6" class="t" style="font-size:18px;margin-top:14px">رسالة أطول من زميل: اكتب هنا كلمات من القلب، ذكرى حلوة، أو وصية لأصحابه.</p></div>
     </div>
-    <div class="card pop fl" style="--r:1.2deg;border-top-color:#D9452F;animation-delay:.3s"><div class="who"><div class="slot av c-r">صورته</div><div><div class="nm t">اسم الزميل</div><div class="sub t">لقبه أو مجموعته</div></div></div><p class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
-    <div class="card pop fl" style="--r:-1.2deg;border-top-color:#1F2A44;animation-delay:.45s"><div class="who"><div class="slot av c-n">صورته</div><div><div class="nm t">اسم الزميل</div><div class="sub t">لقبه أو مجموعته</div></div></div><p class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
+    <div class="card pop fl" style="--r:1.2deg;border-top-color:#D9452F;animation-delay:.3s"><div class="who"><div data-k="p7-s2" class="slot av c-r">صورته</div><div><div data-k="p7-t7" class="nm t">اسم الزميل</div><div data-k="p7-t8" class="sub t">لقبه أو مجموعته</div></div></div><p data-k="p7-t9" class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
+    <div class="card pop fl" style="--r:-1.2deg;border-top-color:#1F2A44;animation-delay:.45s"><div class="who"><div data-k="p7-s3" class="slot av c-n">صورته</div><div><div data-k="p7-t10" class="nm t">اسم الزميل</div><div data-k="p7-t11" class="sub t">لقبه أو مجموعته</div></div></div><p data-k="p7-t12" class="t">اكتب هنا رسالة الزميل كما كتبها. تقدر تعدل الكلام والاسم والصورة بكل سهولة.</p></div>
   </div>
-  <div class="foot t">دفعة 75 · طب عين شمس</div>
-  <div class="num t" style="background:#17756B">٧</div>
+  <div data-k="p7-t13" class="foot t">دفعة 75 · طب عين شمس</div>
+  <div data-k="p7-t14" class="num t" style="background:#17756B">٧</div>
 </div></div></section>
 
 <!-- ============ 8. الغلاف الخلفي ============ -->
@@ -218,20 +212,22 @@
   <div class="abs" style="inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:150px 64px 0">
     <div class="pol fl" style="position:relative;--r:3deg;width:300px;color:#1F2A44">
       <i class="tape" style="right:100px;width:96px;background:#FFC857;transform:rotate(-3deg)"></i>
-      <div class="slot c-r" style="height:290px;font-size:19px">آخر صورة جماعية للدفعة</div>
-      <div class="cap t">تعليق</div>
+      <div data-k="p8-s1" class="slot c-r" style="height:290px;font-size:19px">آخر صورة جماعية للدفعة</div>
+      <div data-k="p8-t1" class="cap t">تعليق</div>
     </div>
-    <div class="t lal pop" style="margin-top:70px;font-size:78px;line-height:1.1;color:#FFC857">شكراً يا دفعة 75</div>
-    <div class="t pop" style="margin-top:12px;font-size:24px;font-weight:600;line-height:1.7;animation-delay:.3s">الأيام عدّت، بس الذكريات والأصحاب فضلوا مع بعض</div>
+    <div data-k="p8-t2" class="t lal pop" style="margin-top:70px;font-size:78px;line-height:1.1;color:#FFC857">شكراً يا دفعة 75</div>
+    <div data-k="p8-t3" class="t pop" style="margin-top:12px;font-size:24px;font-weight:600;line-height:1.7;animation-delay:.3s">الأيام عدّت، بس الذكريات والأصحاب فضلوا مع بعض</div>
     <div style="margin-top:36px;display:flex;align-items:center;gap:12px">
       <svg class="bt" width="38" height="35" style="color:#FFC857"><use href="#ht"/></svg>
-      <div class="t aref" style="font-size:34px">دفعة 75 · طب عين شمس</div>
+      <div data-k="p8-t4" class="t aref" style="font-size:34px">دفعة 75 · طب عين شمس</div>
     </div>
-    <div class="t" style="margin-top:auto;margin-bottom:70px;background:#FFF6E4;color:#1F2A44;border-radius:40px;padding:10px 30px;font-weight:800;font-size:18px">لجنة إعداد الكتاب · وسيلة التواصل</div>
+    <div data-k="p8-t5" class="t" style="margin-top:auto;margin-bottom:70px;background:#FFF6E4;color:#1F2A44;border-radius:40px;padding:10px 30px;font-weight:800;font-size:18px">لجنة إعداد الكتاب · وسيلة التواصل</div>
   </div>
 </div></div></section>
 
 </main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
